@@ -1,0 +1,17 @@
+NAME: "DifyAgent"
+VERSION: "v0.0.1"
+# 暴露给前端的参数选项以及默认值
+PARAMETERS: [
+  {
+    NAME: "DIFY_API_URL",
+    DEFAULT: "http://192.168.1.11/v1"
+  },
+  {
+    NAME: "DIFY_API_KEY",
+    DEFAULT: "app-IaeiXGDoe5o7ve1JdBr60SkD"
+  },
+  {
+    NAME: "DIFY_API_USER",
+    DEFAULT: "adh"
+  }
+]

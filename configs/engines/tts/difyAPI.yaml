@@ -1,0 +1,13 @@
+NAME: "DifyAPI"
+VERSION: "v0.0.1"
+# 需求参数
+PARAMETERS: [
+  {
+    NAME: "DIFY_API_URL",
+    DEFAULT: "http://192.168.1.11/v1"
+  },
+  {
+    NAME: "DIFY_API_KEY",
+    DEFAULT: "app-IaeiXGDoe5o7ve1JdBr60SkD"
+  }
+]
