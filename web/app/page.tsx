@@ -29,8 +29,8 @@ export default function Home() {
   }, [fetchDefaultAgent, fetchAgentSettings])
 
   return (
-      <div className="flex-1 overflow-auto relative" style={{ height: 400 }}>
-
+      // <div className="flex-1 overflow-auto relative" style={{ height: 400 }}>
+      <div className="flex-1 overflow-auto">
         { showCharacter ? <Live2d/> : <></>}    
 
         {/* <img src="/character.png" alt="角色" className="absolute top-0 left-0 w-full h-full object-contain object-center z-0"/> */}
