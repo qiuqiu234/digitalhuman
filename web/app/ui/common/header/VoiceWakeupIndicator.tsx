@@ -40,7 +40,15 @@ export default function VoiceWakeupIndicator({ onWakeup }: { onWakeup: () => voi
       for (let i = event.resultIndex; i < event.results.length; ++i) {
         if (event.results[i].isFinal) {
           const transcript = event.results[i][0].transcript.trim();
-          if (transcript.includes("你好")) {
+          console.log("语音识别结果：", transcript);
+          // 宽松匹配
+          if (
+            transcript.replace(/\s/g, '').includes("你好医普") ||
+            transcript.includes("你好,医普") ||
+            transcript.includes("你好一部")  ||
+            transcript.includes("你好，伊普")  ||
+            transcript.includes("你好，艾普")
+          ) {
             setState("wakeup");
             recognition.stop();
             console.log("唤醒事件已触发");
